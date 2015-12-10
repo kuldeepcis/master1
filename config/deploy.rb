@@ -1,31 +1,8 @@
 # config valid only for current version of Capistrano
-#require 'capistrano/ext/multistage'
 lock '3.4.0'
 
-
-
-set :application, "test_all"
-
-# Source code
-set :scm, :git
-set :repository, "git@github.com:kuldeepcis/kultest.git"
-#set :user, "kuldeepcis"
-set :scm_username, "kuldeepcis"
-set :scm_password, "kuldeepJ@14"
-
-set :branch, "test"
-set :repository_cache, "git_cache"
-#set :deploy_via, :remote_cache
-set :deploy_via, :copy
-set :ssh_options, { :forward_agent => true }
-
-# Deployment servers
-role :app, "169.255.255.255"
-role :web, "169.255.255.255"
-role :db,  "169.255.255.255", :primary => true
-set :deploy_to, "/var/www/test"
-
-
+set :application, 'my_app_name'
+set :repo_url, 'git@example.com:me/my_repo.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -57,15 +34,15 @@ set :deploy_to, "/var/www/test"
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-#namespace :deploy do
+namespace :deploy do
 
-#  after :restart, :clear_cache do
-#    on roles(:web), in: :groups, limit: 3, wait: 10 do
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-#    end
-#  end
+    end
+  end
 
-#end
+end
