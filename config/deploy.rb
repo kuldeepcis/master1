@@ -11,7 +11,8 @@ set :repo_url, 'git@github.com:kuldeepcis/master1.git'
 set :deploy_to, '/home/dlrmedia/sites/werksters/public_html/testcap'
 
 set :branch, "master"
-#set :user, "deploy"
+set :user, "deploy"
+set :password, "deploy"
 # Default value for :scm is :git
 set :scm, :git
 
