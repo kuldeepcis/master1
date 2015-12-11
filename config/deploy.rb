@@ -13,14 +13,17 @@ set :deploy_to, '/home/dlrmedia/sites/werksters/public_html/testcap'
 #set :branch, "master"
 
 set :user, "deploy"
-
+set :scm_passphrase, "deploy"
 # Default value for :scm is :git
 set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
 set :use_sudo, true
-
+set :deploy_via, :copy
+set :ssh_options, { :forward_agent => true, :port => 4321 }
+set :keep_releases, 5
+default_run_options[:pty] = true
 # Default value for :log_level is :debug
 set :log_level, :debug
 set :stages, ["staging", "production"]
