@@ -24,7 +24,7 @@ set :ssh_options, { :forward_agent => true }
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
 
-server "http://www.werksters.nl.wereldreizigers.nl/", roles: [:app, :web, :db], :primary => true
+server "http://www.werksters.nl.wereldreizigers.nl/", roles: [:app, :web], :primary => true
 set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
 # Deployment servers
 #role :app, "169.255.255.255"
