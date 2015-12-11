@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 #require 'capistrano/ext/multistage'
 lock '3.4.0'
-
+ 
 
 
 
@@ -14,7 +14,7 @@ set :repository, "git@github.com:kuldeepcis/master1.git"
 set :scm_username, "kuldeepcis"
 set :scm_password, "kuldeepJ@14"
 
-set :user, "deploy"
+set :user, "dlrmedia"
 set :branch, "master"
 set :repository_cache, "git_cache"
 #set :deploy_via, :remote_cache
