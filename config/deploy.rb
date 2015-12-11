@@ -22,7 +22,7 @@ set :scm, :git
 set :use_sudo, true
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true, :port => 4321 }
-set :keep_releases, 5
+
 
 # Default value for :log_level is :debug
 set :log_level, :debug
