@@ -10,9 +10,10 @@ set :repo_url, 'git@github.com:kuldeepcis/master1.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/dlrmedia/sites/werksters/public_html/testcap'
 
-set :branch, "master"
+#set :branch, "master"
+
 set :user, "deploy"
-set :password, "deploy"
+
 # Default value for :scm is :git
 set :scm, :git
 
