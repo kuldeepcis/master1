@@ -26,8 +26,9 @@ set :deploy_via, :copy
 set :log_level, :debug
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
+
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
@@ -39,7 +40,7 @@ set :default_stage, "staging"
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+ set :keep_releases, 5
 
 namespace :deploy do
 
