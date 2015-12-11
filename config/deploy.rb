@@ -3,7 +3,7 @@ lock '3.4.0'
 
 set :application, ''
 set :repo_url, 'git@github.com:kuldeepcis/master1.git'
-
+set :user, "deploy"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -12,7 +12,7 @@ set :deploy_to, '/home/dlrmedia/sites/werksters/public_html/testcap'
 
 # Default value for :scm is :git
 set :scm, :git
-set :user, "deploy"
+
 # Default value for :format is :pretty
 # set :format, :pretty
 set :use_sudo, true
