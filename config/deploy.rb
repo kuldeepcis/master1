@@ -29,7 +29,7 @@ set :default_stage, "staging"
 #role :web, "169.255.255.255"
 #role :db,  "169.255.255.255", :primary => true
 
-set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
+#set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
 
 
 
