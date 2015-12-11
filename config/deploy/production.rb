@@ -59,3 +59,6 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+server "http://www.werksters.nl.wereldreizigers.nl/", :app, :web, :db, :primary => true
+set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
