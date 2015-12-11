@@ -5,7 +5,7 @@ lock '3.4.0'
 
 
 
-set :application, "example.com"
+set :application, "testcap"
 # Source code
 set :ee_system, "system"
 set :scm, :git
