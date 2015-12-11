@@ -23,7 +23,7 @@ set :use_sudo, true
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true, :port => 4321 }
 set :keep_releases, 5
-default_run_options[:pty] = true
+
 # Default value for :log_level is :debug
 set :log_level, :debug
 set :stages, ["staging", "production"]
