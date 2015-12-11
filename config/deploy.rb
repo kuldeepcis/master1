@@ -22,8 +22,6 @@ set :scm, :git
 set :use_sudo, true
 set :deploy_via, :copy
 
-
-
 # Default value for :log_level is :debug
 set :log_level, :debug
 set :stages, ["staging", "production"]
