@@ -22,7 +22,7 @@ set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true }
 
 set :stages, ["staging", "production"]
-set :default_stage, "production"
+set :default_stage, "staging"
 
 server "http://www.werksters.nl.wereldreizigers.nl/", roles: [:app, :web, :db], :primary => true
 set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
