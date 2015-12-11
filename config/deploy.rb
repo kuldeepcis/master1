@@ -1,25 +1,24 @@
 # config valid only for current version of Capistrano
 #require 'capistrano/ext/multistage'
+require 'capistrano/ext/multistage'
 lock '3.4.0'
  
-
-
-
 set :application, "testcap"
 # Source code
-set :ee_system, "system"
 set :scm, :git
 set :repository, "git@github.com:kuldeepcis/master1.git"
-#set :user, "kuldeepcis"
-set :scm_username, "kuldeepcis"
-set :scm_password, "kuldeepJ@14"
+set :scm_passphrase, ""
 
-set :user, "dlrmedia"
+#set :user, "kuldeepcis"
+set :user, "kuldeepcis"
+
+
+#set :user, "dlrmedia"
 set :branch, "master"
-set :repository_cache, "git_cache"
+#set :repository_cache, "git_cache"
 #set :deploy_via, :remote_cache
 set :deploy_via, :copy
-set :ssh_options, { :forward_agent => true }
+#set :ssh_options, { :forward_agent => true }
 
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
