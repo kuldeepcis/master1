@@ -60,5 +60,5 @@
 #     # password: 'please use keys'
 #   }
 
-server "http://www.werksters.nl.wereldreizigers.nl/", roles: [:app, :web], :primary => true
+server "werksters.nl.wereldreizigers.nl/", roles: [:app, :web], :primary => true
 set :deploy_to, "/home/dlrmedia/sites/werksters/public_html/testcap"
