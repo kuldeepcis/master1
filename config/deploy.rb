@@ -21,6 +21,9 @@ set :repository_cache, "git_cache"
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true }
 
+set :stages, ["staging", "production"]
+set :default_stage, "staging"
+
 # Deployment servers
 #role :app, "169.255.255.255"
 #role :web, "169.255.255.255"
